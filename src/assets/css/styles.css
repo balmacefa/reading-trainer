@@ -1,0 +1,22 @@
+.running-words-container {
+  width: 320px;
+  margin-top: 50px;
+}
+
+.underline {
+  border-bottom: #c8c8c8 2px solid;
+}
+
+.p-20 {
+  padding: 12px;
+  font-size: 1.1em;
+}
+
+.p-7 {
+  padding: 7px;
+}
+
+.container.Exercise-description {
+  margin-top: 20px;
+}
+

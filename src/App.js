@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import "./assets/bootstrap/css/bootstrap.min.css";
+import "./assets/fonts/font-awesome.min.css";
+import "./assets/fonts/ionicons.min.css";
+import "./assets/css/Features-Boxed.css";
+import "./assets/css/Footer-Clean.css";
+import "./assets/css/Navigation-Clean.css";
+import "./assets/css/styles.css";
+
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Header from './components/globals/Header';
+import Footer from './components/globals/Footer';
+import Features from './components/exercises/Features';
+import RunningWords from './components/exercises/RunningWords';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+
+            <Header/>
+            <Switch>
+                <Route exact path="/">
+                    <Features/>
+                </Route>
+                <Route path="/running-words">
+                    <RunningWords/>
+                </Route>
+            </Switch>
+            <Footer/>
+        </Router>
+    );
 }
 
 export default App;
