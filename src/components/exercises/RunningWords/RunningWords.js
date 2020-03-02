@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import wordList from '../words.json';
 import ReactAnimationFrame from 'react-animation-frame';
 import RunningWordsPlay from './RunningWordsPlay.js';
 import RunningWordsAnswer from './RunningWordsAnswer.js';
 import RunningWordsFinished from './RunningWordsFinished.js';
+
+import WordsGenerator from '../../../utils/wordGenerator/WordsGenerator';
 
 class RunningWords extends Component {
 
@@ -67,7 +68,7 @@ class RunningWords extends Component {
     }
 
     pickRandomWord() {
-        return wordList[Math.floor(Math.random() * wordList.length)];
+        return WordsGenerator();
     }
 
     nexRoundTime(time) {
@@ -75,7 +76,7 @@ class RunningWords extends Component {
         this.endRoundTime = time + (Math.random() * (this.roundFrequency[0] - this.roundFrequency[1]) + this.roundFrequency[1]);
     }
 
-    onAnimationFrameInit(time, lastInvocationMs) {
+    onAnimationFrameInit(time) {
         this.setState({init: true});
         this.nextFireWord = 0;
         this.endRoundTime = 0;
@@ -153,7 +154,7 @@ class RunningWords extends Component {
 
     }
 
-    onAnimationFrame(time, lastInvocationMs) {
+    onAnimationFrame(time) {
         if (!this.state.init) {
             this.onAnimationFrameInit(time);
         }
