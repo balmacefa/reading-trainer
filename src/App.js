@@ -13,7 +13,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from './components/globals/Header';
 import Footer from './components/globals/Footer';
 import Features from './components/exercises/Features';
-import RunningWords from './components/exercises/RunningWords';
+import RunningWords from './components/exercises/RunningWords/RunningWords';
 
 function App() {
     return (
