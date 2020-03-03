@@ -14,6 +14,7 @@ import Header from './components/globals/Header';
 import Footer from './components/globals/Footer';
 import Features from './components/exercises/Features';
 import RunningWords from './components/exercises/RunningWords/RunningWords';
+import ColumnsOfWords from './components/exercises/ColumnsOfWords/ColumnsOfWords';
 
 function App() {
     return (
@@ -26,6 +27,9 @@ function App() {
                 </Route>
                 <Route path="/running-words">
                     <RunningWords/>
+                </Route>
+                <Route path="/columns-of-words">
+                    <ColumnsOfWords/>
                 </Route>
             </Switch>
             <Footer/>

@@ -22,7 +22,7 @@ function WordsGenerator(options) {
     }
 
     function generateRandomWord() {
-        return wordList[randInt(1, wordList.length)];
+        return wordList[randInt()];
     }
 
     function randInt(min = 1, max = wordList.length) {
@@ -37,19 +37,15 @@ function WordsGenerator(options) {
     // Just a number = return that many words
     if (typeof options === 'number') {
         options = {
-            exactly: options
+            wordsPerString: options
         };
-    }
-
-    // options supported: exactly, min, max, join
-    if (options.exactly) {
-        options.max = options.exactly;
     }
 
     // not a number = one word par string
     if (typeof options.wordsPerString !== 'number') {
         options.wordsPerString = 1;
     }
+    options.wordsPerString = Math.abs(options.wordsPerString);
 
     //not a function = returns the raw word
     if (typeof options.formatter !== 'function') {
@@ -61,19 +57,11 @@ function WordsGenerator(options) {
         options.separator = ' ';
     }
 
-    options.min = options.min
-        ? options.min
-        : 1;
-    options.max = options.max
-        ? options.max
-        : options.min;
-
-    const total = options.min + randInt(options.min, options.max);
     const results = [];
     let token = '';
     let relativeIndex = 0;
 
-    for (let i = 0; i < total * options.wordsPerString; i++) {
+    for (let i = 0; i < options.wordsPerString; i++) {
         if (relativeIndex === options.wordsPerString - 1) {
             token += options.formatter(WordsGenerator(), relativeIndex);
         } else {
@@ -94,8 +82,8 @@ function WordsGenerator(options) {
     }
 
     return results;
+
 }
 
 WordsGenerator.wordList = wordList;
-
 export default WordsGenerator;
