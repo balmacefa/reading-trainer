@@ -16,6 +16,7 @@ import Features from './components/exercises/Features';
 import RunningWords from './components/exercises/RunningWords/RunningWords';
 import ColumnsOfWords from './components/exercises/ColumnsOfWords/ColumnsOfWords';
 import BlockOfWords from './components/exercises/BlockOfWords/BlockOfWords';
+import SpeedReadingTest from './components/exercises/SpeedReadingTest/SpeedReadingTest';
 
 function App() {
     return (
@@ -26,6 +27,11 @@ function App() {
                 <Route exact path="/">
                     <Features/>
                 </Route>
+
+                <Route path="/speed-reading-test">
+                    <SpeedReadingTest/>
+                </Route>
+
                 <Route path="/running-words">
                     <RunningWords/>
                 </Route>
