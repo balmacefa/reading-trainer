@@ -17,6 +17,7 @@ import RunningWords from './components/exercises/RunningWords/RunningWords';
 import ColumnsOfWords from './components/exercises/ColumnsOfWords/ColumnsOfWords';
 import BlockOfWords from './components/exercises/BlockOfWords/BlockOfWords';
 import SpeedReadingTest from './components/exercises/SpeedReadingTest/SpeedReadingTest';
+import ReadingHelper from './components/exercises/ReadingHelper/ReadingHelper';
 
 function App() {
     return (
@@ -41,6 +42,9 @@ function App() {
 
                 <Route path="/block-of-words">
                     <BlockOfWords/>
+                </Route>
+                <Route path="/reading-helper">
+                    <ReadingHelper/>
                 </Route>
 
             </Switch>

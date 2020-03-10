@@ -54,49 +54,35 @@ class SpeedReadingTest extends Component {
                     </div>
                 </div>
 
-                <div className="container p-7 mt-5">
-                    <div className="row">
-                        <div className="col-12 p-7">
-                            <p id="countableArea">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu malesuada
-                                velit. Suspendisse eget turpis at urna lacinia suscipit. Nam consequat, felis et
-                                congue fermentum, neque lorem tincidunt turpis, at semper est mauris vel velit.
-                                Nulla eu nisl feugiat, lacinia nunc quis, sollicitudin leo. Vivamus vestibulum
-                                blandit dolor, id varius augue sagittis ac. Praesent non sem ipsum. Suspendisse
-                                sagittis congue lacus et gravida. Integer et ipsum feugiat, luctus erat at,
-                                volutpat diam. Integer justo massa, ultrices at porttitor nec, rutrum quis
-                                augue. Ut accumsan dictum ante ut efficitur. Sed molestie ipsum elit, et
-                                interdum est aliquet non. Nam tincidunt rhoncus erat, sit amet auctor ipsum
-                                ornare convallis. Mauris at eros pulvinar risus ornare accumsan sed id nisl.
-                                Pellentesque enim velit, maximus sed elit sed, luctus sodales massa. Integer
-                                venenatis nibh nulla, vel efficitur massa volutpat in. Mauris porta dui id
-                                tellus laoreet, at sodales lorem posuere. Maecenas eget elementum purus.
-                                Maecenas sagittis malesuada vehicula. Quisque ac tellus ut felis mollis commodo
-                                quis feugiat lectus. In sed tincidunt arcu. Etiam bibendum a nulla a tristique.
-                                Aliquam viverra tellus et tincidunt ultrices. Nulla in pretium velit. Donec
-                                viverra elit quis enim luctus dapibus. Duis et mattis dolor. Duis gravida in
-                                lacus in dignissim. Fusce nisi nulla, mattis ut efficitur sed, bibendum in
-                                nulla. Vivamus ut auctor sapien. Mauris venenatis libero at porta gravida. Duis
-                                rhoncus consectetur ex in tempor. Ut porta vitae tellus in convallis. Proin
-                                scelerisque laoreet neque, ut blandit enim blandit ac. Cras consectetur
-                                consequat orci ornare pellentesque. Fusce vel lorem eu libero dignissim
-                                efficitur. Mauris vitae massa cursus, tincidunt massa vitae, ullamcorper tellus.
-                                Nullam vel turpis porttitor, pulvinar eros in, mollis libero. Vestibulum erat
-                                orci, cursus vitae metus sit amet, aliquam faucibus felis. Etiam malesuada ut
-                                nibh eu auctor. Curabitur libero sapien, congue vitae neque ullamcorper,
-                                molestie egestas nibh. In maximus diam ac dolor fringilla, fringilla interdum
-                                velit bibendum. Sed mollis sed eros ac tincidunt. Aliquam mollis malesuada
-                                purus, sit amet auctor odio sollicitudin id. Duis cursus justo metus, lobortis
-                                sollicitudin est bibendum a. Donec et lobortis enim. Aenean egestas convallis
-                                dapibus. Sed tincidunt nunc id est molestie efficitur. Pellentesque in elementum
-                                nulla. Curabitur ut ante in ligula laoreet auctor. Fusce iaculis augue eget
-                                libero pretium, nec commodo diam scelerisque. Phasellus a fermentum nisl.
-                                Pellentesque varius ligula eget justo aliquam, ac mattis neque tincidunt. Sed
-                                nec lectus ut massa commodo placerat. Pellentesque vel ante blandit, tristique
-                                est eu, vestibulum nulla. Suspendisse non semper metus, ut vehicula est. Mauris
-                                feugiat nec nisl id blandit. Suspendisse faucibus orci et arcu vestibulum
-                                ultricies. Phasellus eget turpis non augue imperdiet tincidunt ut quis mauris.
-                                Morbi vulputate sollicitudin varius. In rutrum interdum enim hendrerit faucibus.
+                <div className="container">
+                    <div className="row justify-content-center text-justify">
+                        <div className="col-md-6 mt-5 mb-5">
+                            <p id="countableArea" className="text-lighter">Have you ever wondered what it
+                                means to live in the present? Arent we all here, now, in the present?
+                                Technically, yes, but for so many of us, we are only 10 percent here. We are
+                                really living in our minds. We exist from day-to-day in a dream-like state where
+                                were not really connected to the world around us, nor centered in our own body
+                                or being. Instead, were preoccupied with memories of the past, churning thoughts
+                                and worries about the future, and judgments and reactions to the few things we
+                                do see. Were literally missing out on most our own lives, which leaves us
+                                feeling shallow, empty and deeply unsettled. The great news is you can learn to
+                                be more present and mindful. Here are 10 easy ways you can practice mindfulness
+                                in your daily life. 1. Eat mindfully. When you scoff down your meal on autopilot
+                                while distracted by the television, computer or constant conversation, you miss
+                                out on the delicious taste and smell of your food. Youre also less likely to
+                                feel satisfied and nourished, because you missed out on the fact that you ate.
+                                It can be helpful to remember this phrase: When you eat, eat. When you drink,
+                                drink. In other words, dont attempt to do fifty other things when you sit down
+                                to a meal, coffee or green juice. Simply focus all of your attention on what is
+                                in front of you. 2. Walk mindfully. The essential guide to taking care of your
+                                mind and body Subscribe to HuffPost’s wellness email Thanks! You have been
+                                successfully signed up. Take a beautiful tip from spiritual leader Thich Nhat
+                                Hanh and walk as if you are kissing the earth with your feet. In others words,
+                                when you are out and about, pay attention occasionally to the movement of your
+                                body and your surroundings. Notice as your feet connect with and leave the
+                                ground. Feel your muscles moving and supporting you. Observe what is going on
+                                around you -- the sights, sounds and life unfolding. You may be amazed to find a
+                                whole new world you hadnt even noticed before.
                             </p>
                         </div>
                     </div>
