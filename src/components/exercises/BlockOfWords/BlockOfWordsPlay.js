@@ -11,7 +11,7 @@ export default class BlockOfWordsPlay extends Component {
                     <div className="row">
                         <div className="col-12">
                             <h2 className="text-center">
-                                <strong>Columns of words</strong>
+                                <strong>Block of words</strong>
                             </h2>
                         </div>
                     </div>
@@ -21,7 +21,7 @@ export default class BlockOfWordsPlay extends Component {
                     className="container border rounded border-info text-center p-7 mt-5">
                     <div className="row">
                         <div className="col-12 p-7">
-                            <p className="text-center description mb-1">{this.props.currentWord}</p>
+                            <p className="text-center description mb-1 f-verdana">{this.props.currentWord}</p>
                         </div>
                     </div>
                 </div>

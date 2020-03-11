@@ -21,6 +21,13 @@ export default class Features extends Component {
                                 link='/speed-reading-test'/>
 
                             <FeaturesItem
+                                icon='fa-newspaper-o'
+                                title='Reading helper'
+                                description='Aenean tortor est, vulputate quis leo in, vehicula
+                                    rhoncus lacus. Praesent aliquam in tellus eu.'
+                                link='/reading-helper'/>
+
+                            <FeaturesItem
                                 icon='fa-bolt'
                                 title='Running Words'
                                 description='The aim of this exercise is to see all the words on
@@ -39,13 +46,6 @@ export default class Features extends Component {
                                 title='Block of words'
                                 description='Expand the line of sight and increase the amount of text captured by the eyes.'
                                 link='/block-of-words'/>
-
-                            <FeaturesItem
-                                icon='fa-newspaper-o'
-                                title='Reading helper'
-                                description='Aenean tortor est, vulputate quis leo in, vehicula
-                                rhoncus lacus. Praesent aliquam in tellus eu.'
-                                link='/reading-helper'/>
 
                         </div>
                     </div>

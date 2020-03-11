@@ -206,3 +206,4 @@ class RunningWords extends Component {
 }
 
 export default ReactAnimationFrame(RunningWords);
+

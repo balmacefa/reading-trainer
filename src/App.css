@@ -36,7 +36,7 @@
 }
 
 .min-height-24 {
-    min-height: 28px;
+    min-height: 29px;
 }
 
 #l-divider {
@@ -142,4 +142,9 @@ input:checked + .slider:before {
 .appear-animation {
     opacity: 100;
     transition-duration: 0.5s;
+}
+
+.f-verdana {
+    font-family: Verdana;
+    font-size: 1.1em;
 }

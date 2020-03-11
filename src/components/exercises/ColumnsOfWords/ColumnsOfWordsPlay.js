@@ -9,7 +9,7 @@ export default class ColumnsOfWordsPlay extends Component {
             .keys(this.props.columnList)
             .map(item => <p
                 key={item}
-                className={`text-center ${this.props.columnList[item].color} description mb-1`}>{this.props.columnList[item].words}</p>);
+                className={`text-center f-verdana ${this.props.columnList[item].color} description mb-1`}>{this.props.columnList[item].words}</p>);
 
         return (
             <Fragment>

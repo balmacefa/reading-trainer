@@ -6,9 +6,9 @@ export default class RunningWordsPlay extends Component {
     render() {
         const items = Object
             .keys(this.props.wordsExcecise)
-            .map(item => <div key={item} className="col-4 p-20">
-                <div className="underline">
-                    <p className="mb-0 min-height-24">{this.props.wordsExcecise[item]}</p>
+            .map(item => <div key={item} className="col-4">
+                <div className="underline p-20">
+                    <p className={`mb-0 min-height-24 f-verdana`}>{this.props.wordsExcecise[item]}</p>
                 </div>
             </div>);
         return (
