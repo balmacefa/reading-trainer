@@ -44,7 +44,9 @@ export default class RunningWordsAnswer extends Component {
                 });
         }
         this.setState({answerList: this.answerList, isAnswered: true});
-        this.props.answerMethod(isCorrect);
+        this
+            .props
+            .answerMethod(isCorrect);
     }
 
     render() {
@@ -76,8 +78,20 @@ export default class RunningWordsAnswer extends Component {
                             <h6 className="text-center text-black-50">wpm</h6>
                         </div>
                     </div>
+                    <div className="row mb-2">
+                        <div className="col-12">
+                            <h6 className="text-center text-black-50">Select the last word:</h6>
+                        </div>
+                    </div>
                     <div className="row">
                         {items}
+                        <div className="col-12 p-3">
+                            <button
+                                disabled={this.state.isAnswered}
+                                onClick={() => this.answerSelected({word: '...'})}
+                                className={`btn btn-warning btn-block p-2`}
+                                type="button">I don&apos;t know</button>
+                        </div>
                     </div>
                 </div>
             </Fragment>

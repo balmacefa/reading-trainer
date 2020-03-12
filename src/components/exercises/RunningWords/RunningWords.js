@@ -159,7 +159,7 @@ class RunningWords extends Component {
             this.onAnimationFrameInit(time);
         }
 
-        if (time > this.endRoundTime && this.state.statusView === 'PLAY') {
+        if (time > this.nextFireWord && time > this.endRoundTime && this.state.statusView === 'PLAY') {
             this.roundCount++;
             this.setAnswerArray();
             this.setState({statusView: "ANSWER"});
@@ -206,4 +206,3 @@ class RunningWords extends Component {
 }
 
 export default ReactAnimationFrame(RunningWords);
-

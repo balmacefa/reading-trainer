@@ -1,5 +1,6 @@
-import React, {Component, Fragment} from 'react'
-import PropTypes from 'prop-types'
+import React, {Component, Fragment} from 'react';
+import PropTypes from 'prop-types';
+import {Link} from "react-router-dom";
 
 export default class RunningWordsFinished extends Component {
 
@@ -19,6 +20,21 @@ export default class RunningWordsFinished extends Component {
                         <div className="col-12 p-7">
                             <h6 className="text-center text-black-50">Correct answers: {this.props.correctAnswers}</h6>
                             <h6 className="text-center text-black-50">Wrong answers: {this.props.wrongAnswers}</h6>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12 p-7">
+                            <a
+                                href=''
+                                className="learn-more"
+                                onClick={() => {
+                                window
+                                    .location
+                                    .reload();
+                            }}>Reset</a>
+                        </div>
+                        <div className="col-12 p-7">
+                            <Link className="learn-more" to="/">Exit</Link>
                         </div>
                     </div>
                 </div>
