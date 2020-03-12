@@ -9,8 +9,6 @@ export default class Features extends Component {
                         <div className="intro">
                             <h2 className="text-center">Features
                             </h2>
-                            <p className="text-center">Nunc luctus in metus eget fringilla. Aliquam sed
-                                justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
                         </div>
                         <div className="row justify-content-center features">
 
@@ -23,9 +21,8 @@ export default class Features extends Component {
                             <FeaturesItem
                                 icon='fa-newspaper-o'
                                 title='Reading helper'
-                                description='Aenean tortor est, vulputate quis leo in, vehicula
-                                    rhoncus lacus. Praesent aliquam in tellus eu.'
-                                link='/reading-helper'/>
+                                link='/reading-helper'
+                                description='The reading helper remove the words, preventing you to reread and force you to read in a constant velocity.'/>
 
                             <FeaturesItem
                                 icon='fa-bolt'
