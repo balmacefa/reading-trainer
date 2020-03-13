@@ -9,7 +9,7 @@ import "./assets/css/Footer-Clean.css";
 import "./assets/css/Navigation-Clean.css";
 import "./assets/css/styles.css";
 
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {HashRouter as Router, Switch, Route} from "react-router-dom";
 import Header from './components/globals/Header';
 import Footer from './components/globals/Footer';
 import Features from './components/exercises/Features';
