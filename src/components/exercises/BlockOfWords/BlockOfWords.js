@@ -9,9 +9,6 @@ class BlockOfWords extends Component {
 
     constructor(props) {
         super(props);
-        this.View = this
-            .View
-            .bind(this);
 
         let amountOfWords = 1;
 
@@ -31,14 +28,6 @@ class BlockOfWords extends Component {
         this.endSessionTime = 60 * 1000;
 
         this.timeout = 1000;
-
-        this.userChangeWords = this
-            .userChangeWords
-            .bind(this);
-
-        this.userChangeWPM = this
-            .userChangeWPM
-            .bind(this);
     }
 
     changeWords(number) {
@@ -103,8 +92,12 @@ class BlockOfWords extends Component {
                     wpm={this.state.wpm}
                     progressBar={this.state.progressBar}
                     amountOfWords={this.state.amountOfWords}
-                    userChangeWords={this.userChangeWords}
-                    userChangeWPM={this.userChangeWPM}/>
+                    userChangeWords={(isUp) => {
+                    this.userChangeWords(isUp)
+                }}
+                    userChangeWPM={(isUp) => {
+                    this.userChangeWPM(isUp)
+                }}/>
             case 'FINISHED':
                 // return <RunningWordsFinished     wpm={this.state.wpm}
                 // correctAnswers={this.correctAnswers}     wrongAnswers={this.wrongAnswers}/>
@@ -118,7 +111,7 @@ class BlockOfWords extends Component {
     render() {
         return (
             <div>
-                <this.View/>
+                {this.View()}
             </div>
         )
     }

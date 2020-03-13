@@ -9,9 +9,6 @@ class ColumnsOfWords extends Component {
 
     constructor(props) {
         super(props);
-        this.View = this
-            .View
-            .bind(this);
 
         this.totalColumns = 10;
         this.maxAmountOfWords = 10;
@@ -43,13 +40,6 @@ class ColumnsOfWords extends Component {
 
         this.timeout = 1000;
 
-        this.userChangeWords = this
-            .userChangeWords
-            .bind(this);
-
-        this.userChangeWPM = this
-            .userChangeWPM
-            .bind(this);
     }
 
     changeAllWords(number) {
@@ -132,8 +122,12 @@ class ColumnsOfWords extends Component {
                     wpm={this.state.wpm}
                     progressBar={this.state.progressBar}
                     amountOfWords={this.state.amountOfWords}
-                    userChangeWords={this.userChangeWords}
-                    userChangeWPM={this.userChangeWPM}/>
+                    userChangeWords={(isUp) => {
+                    this.userChangeWords(isUp)
+                }}
+                    userChangeWPM={(isUp) => {
+                    this.userChangeWPM(isUp)
+                }}/>
             case 'FINISHED':
                 // return <RunningWordsFinished     wpm={this.state.wpm}
                 // correctAnswers={this.correctAnswers}     wrongAnswers={this.wrongAnswers}/>
@@ -147,7 +141,7 @@ class ColumnsOfWords extends Component {
     render() {
         return (
             <div>
-                <this.View/>
+                {this.View()}
             </div>
         )
     }

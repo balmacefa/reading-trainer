@@ -148,3 +148,15 @@ input:checked + .slider:before {
     font-family: Verdana;
     font-size: 1.1em;
 }
+
+.link:hover {
+    color: 
+    #0056b3;
+    text-decoration: underline;
+}
+.link {
+    color: #007bff;
+    text-decoration: none;
+    background-color: 
+    transparent;
+}

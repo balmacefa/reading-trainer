@@ -14,9 +14,6 @@ class SpeedReadingTest extends Component {
             amountOfWords: 0
         };
         this.idContainer = 'countableArea';
-        this.userEndTheTest = this
-            .userEndTheTest
-            .bind(this);
     }
 
     componentDidMount() {

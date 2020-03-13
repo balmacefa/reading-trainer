@@ -10,13 +10,7 @@ class RunningWords extends Component {
 
     constructor(props) {
         super(props);
-        this.View = this
-            .View
-            .bind(this);
 
-        this.getResponseFromUser = this
-            .getResponseFromUser
-            .bind(this);
         this.totalWords = 9;
 
         const wordsExcecise = [];
@@ -38,7 +32,7 @@ class RunningWords extends Component {
         this.nextFireWord = 0;
         this.endRoundTime = 0;
         this.roundCount = 0;
-        this.roundAmount = 13;
+        this.roundAmount = 1;
         this.roundFrequency = [1000, 2000];
 
         this.timeout = 1000;
@@ -185,7 +179,9 @@ class RunningWords extends Component {
                     answerList={this.state.answerList}
                     wpm={this.state.wpm}
                     correctWord={this.word}
-                    answerMethod={this.getResponseFromUser}/>
+                    answerMethod={(isCorrect) => {
+                    this.getResponseFromUser(isCorrect)
+                }}/>
             case 'FINISHED':
                 return <RunningWordsFinished
                     wpm={this.state.wpm}
@@ -199,7 +195,7 @@ class RunningWords extends Component {
     render() {
         return (
             <div>
-                <this.View/>
+                {this.View()}
             </div>
         )
     }

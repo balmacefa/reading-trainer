@@ -24,14 +24,13 @@ export default class RunningWordsFinished extends Component {
                     </div>
                     <div className="row">
                         <div className="col-12 p-7">
-                            <a
-                                href=''
-                                className="learn-more"
+                            <p
+                                className="link"
                                 onClick={() => {
                                 window
                                     .location
                                     .reload();
-                            }}>Reset</a>
+                            }}>Reset</p>
                         </div>
                         <div className="col-12 p-7">
                             <Link className="learn-more" to="/">Exit</Link>

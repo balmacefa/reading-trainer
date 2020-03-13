@@ -23,18 +23,7 @@ class ReadingHelper extends Component {
         this.appearAnimationClass = 'appear-animation';
 
         this.nextFireWord = 0;
-        this.userRemoveWords = this
-            .userRemoveWords
-            .bind(this);
-        this.userChangeWPM = this
-            .userChangeWPM
-            .bind(this);
-        this.userResetWords = this
-            .userResetWords
-            .bind(this);
-        this.userChangeDividerSpacing = this
-            .userChangeDividerSpacing
-            .bind(this);
+
     }
 
     componentDidMount() {
@@ -107,10 +96,18 @@ class ReadingHelper extends Component {
 
                     <ReadingHelperController
                         wpm={this.state.wpm}
-                        userChangeWPM={this.userChangeWPM}
-                        userRemoveWords={this.userRemoveWords}
-                        userResetWords={this.userResetWords}
-                        userChangeDividerSpacing={this.userChangeDividerSpacing}
+                        userChangeWPM={(isUp) => {
+                        this.userChangeWPM(isUp)
+                    }}
+                        userRemoveWords={(event) => {
+                        this.userRemoveWords(event)
+                    }}
+                        userResetWords={() => {
+                        this.userResetWords()
+                    }}
+                        userChangeDividerSpacing={(event) => {
+                        this.userChangeDividerSpacing(event)
+                    }}
                         dividerSpacing={this.state.divider}/>
 
                     <div className="row justify-content-center text-justify">
