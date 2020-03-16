@@ -13,9 +13,9 @@ class RunningWords extends Component {
 
         this.totalWords = 9;
 
-        const wordsExcecise = [];
+        const wordsExcise = [];
         for (let index = 0; index < this.totalWords; index++) {
-            wordsExcecise[index] = '';
+            wordsExcise[index] = '';
         }
 
         //'PLAY', ANSWER, FINISHED
@@ -23,7 +23,7 @@ class RunningWords extends Component {
             init: false,
             statusView: 'PLAY',
             wpm: 400,
-            wordsExcecise
+            wordsExcise
         };
 
         this.currentWordRef = this.totalWords - 1;
@@ -54,11 +54,11 @@ class RunningWords extends Component {
 
     addNewWord() {
         this.word = this.pickRandomWord();
-        let items = [...this.state.wordsExcecise];
+        let items = [...this.state.wordsExcise];
 
         items[this.currentWordRef] = '';
         items[this.nextWordRef()] = this.word;
-        this.setState({wordsExcecise: items});
+        this.setState({wordsExcise: items});
     }
 
     pickRandomWord() {
@@ -172,7 +172,7 @@ class RunningWords extends Component {
         switch (this.state.statusView) {
             case 'PLAY':
                 return <RunningWordsPlay
-                    wordsExcecise={this.state.wordsExcecise}
+                    wordsExcise={this.state.wordsExcise}
                     wpm={this.state.wpm}/>
             case 'ANSWER':
                 return <RunningWordsAnswer
