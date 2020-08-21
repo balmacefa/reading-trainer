@@ -5,10 +5,10 @@ export default class RunningWordsPlay extends Component {
 
     render() {
         const items = Object
-            .keys(this.props.wordsExcecise)
+            .keys(this.props.wordsExcise)
             .map(item => <div key={item} className="col-4 mb-2 p-1">
                 <div className="underline">
-                    <p className={`mb-0 min-height-24 f-verdana`}>{this.props.wordsExcecise[item]}</p>
+                    <p className={`mb-0 min-height-24 f-verdana`}>{this.props.wordsExcise[item]}</p>
                 </div>
             </div>);
         return (
@@ -37,6 +37,6 @@ export default class RunningWordsPlay extends Component {
 }
 
 RunningWordsPlay.propTypes = {
-    wordsExcecise: PropTypes.array.isRequired,
+    wordsExcise: PropTypes.array.isRequired,
     wpm: PropTypes.number.isRequired
 };
